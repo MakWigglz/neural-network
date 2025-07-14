@@ -65,4 +65,20 @@ with torch.no_grad():
 
 ---
 
-Let me know if you want to visualize the digits, add dropout, or benchmark against a logistic regression baseline. We can also refactor this into a PyScript or Observable notebook setup if you're itching to get interactive.
+import matplotlib.pyplot as plt
+
+# Reshape each sample from 256-dimensional vector to 16x16 image
+def plot_digits(samples, labels, num_to_show=10):
+    plt.figure(figsize=(12, 2))
+    for i in range(num_to_show):
+        img = samples[i].reshape(16, 16)
+        plt.subplot(1, num_to_show, i + 1)
+        plt.imshow(img, cmap='gray')
+        plt.title(f'Label: {labels[i]}')
+        plt.axis('off')
+    plt.tight_layout()
+    plt.show()
+
+# Show first 10 digits in training set
+plot_digits(X_train.numpy(), y_train.numpy())
+
