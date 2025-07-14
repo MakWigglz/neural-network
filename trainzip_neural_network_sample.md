@@ -1,4 +1,4 @@
-Absolutely! Here's a lightweight example of a neural network using PyTorch and the classic ZIP code digits dataset from `zip.train`, which you might recognize from older datasets like the USPS digit recognition task. If you're using a notebook, this will run smoothly and give you a compact testbed to play with predictions.
+A lightweight example of a neural network using PyTorch and the classic ZIP code digits dataset from `zip.train`, which you might recognize from older datasets like the USPS digit recognition task. If you're using a notebook, this will run smoothly and give you a compact testbed to play with predictions.
 
 ### 🧠 Simple Neural Network with ZIP Train
 
